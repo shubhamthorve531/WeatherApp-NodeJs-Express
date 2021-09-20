@@ -25,7 +25,7 @@
         <div class="result">
             <% if(temp !== null)  {%>
                 <h1 class="temp">
-                    <%= temp %>&#176;
+                     <%= Math.round(((temp-273.15) + Number.EPSILON) * 100) / 100 %>&#176;C
                 </h1>
                 <% } %>
 
